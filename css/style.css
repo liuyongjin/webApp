@@ -354,7 +354,6 @@
 	.classification-content-wrapper .classification-tab {
 		display: flex;
 		height: 170px;
-		border: 1px solid red;
 	}
 	
 	.classification-content-wrapper .classification-tab .classification-item {
