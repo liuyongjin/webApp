@@ -1,0 +1,10 @@
+<div class="search-bottom-wrapper">
+	<h3><i class="glyphicon glyphicon-dashboard"></i>最近搜索</h3>
+	<dl>
+		<dd ng-repeat="v in data" >
+			<p ng-bind="v.name"></p>
+			<i class="glyphicon glyphicon-remove-circle" ng-click="cancel($index)"></i>
+		</dd>
+	</dl>
+	<a href="javascript:;" ng-click="clear()">清除搜索历史</a>
+</div>

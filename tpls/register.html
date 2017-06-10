@@ -1,0 +1,17 @@
+<div class="register-wrapper">
+	<form name="form">
+		<div class="text-wrapper">
+			<span class="glyphicon glyphicon-user text"></span>
+			<input ng-model="user.phone" validator="phone" type="text" placeholder="请输入账号" />
+		</div>
+		<div class="passward-wrapper">
+			<span class="glyphicon glyphicon-lock password"></span>
+			<input ng-model="user.password" validator="password" type="password" placeholder="请输入密码" />
+		</div>
+		<div class="verification">
+			<input ng-model="user.code" type="text" placeholder="短信验证码" />
+			<span ng-click="time?1==1:send()" ng-bind="time?time:'发送验证码'"></span>
+		</div>
+		<button class="register" validation-submit="form" ng-click="submit()">注册</button>
+	</form>
+</div>

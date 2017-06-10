@@ -1,0 +1,53 @@
+[
+	{
+		"title":"IT互联网",
+		"content": [
+			{
+				"id": 1,
+				"imgSrc": "./imgs/01.png",
+				"description": "CD-Linux运维",
+				"money": "免费"
+			}, {
+				"id": 2,
+				"imgSrc": "./imgs/02.png",
+				"description": "Java开发",
+				"money": "免费"
+			}, {
+				"id": 3,
+				"imgSrc": "./imgs/03.png",
+				"description": "高级前端开发",
+				"money": "免费"
+			}, {
+				"id": 4,
+				"imgSrc": "./imgs/04.png",
+				"description": "软件测试自学",
+				"money": "免费"
+			}
+		]
+	}, {
+		"title": "IT互联网",
+		"content": [
+			{
+				"id": 1,
+				"imgSrc": "./imgs/01.png",
+				"description": "CD-Linux运维",
+				"money": "免费"
+			}, {
+				"id": 2,
+				"imgSrc": "./imgs/02.png",
+				"description": "Java开发",
+				"money": "免费"
+			}, {
+				"id": 3,
+				"imgSrc": "./imgs/03.png",
+				"description": "高级前端开发",
+				"money": "免费"
+			}, {
+				"id": 4,
+				"imgSrc": "./imgs/04.png",
+				"description": "软件测试自学",
+				"money": "免费"
+			}
+		]
+	}
+]

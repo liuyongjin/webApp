@@ -1,0 +1,12 @@
+<div class="classification-content-wrapper">
+	<ul class="classification-tab">
+		<li class="classification-item" ng-repeat="v in data1" ng-class="{light:ishighlight==$index}" ng-click="showDetial($index)" ng-bind="v.title1 | f"></li>
+	</ul>
+	<ul class="classification-content">
+		<h3 ng-bind="content.title"></h3>
+		<li ng-repeat="v in content.detialData" class="classification-content-item animated fadeInRight">
+			<a href="" ng-bind="v.name"></a>
+		</li>
+	</ul>
+	<a href="#">了解更多</a>
+</div>

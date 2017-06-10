@@ -1,0 +1,10 @@
+<div class="home-content" ng-repeat="v1 in data">
+		<h3 class="home-content-title" ng-bind="v1.title"></h3>
+		<ul class="clearfix animated bounceInUp">
+			<li class="home-content-content" ui-sref="courseDetial({id:v2.id})" ng-repeat="v2 in v1.content">
+				<img ng-src="{{v2.imgSrc}}"/>
+				<p class="p1" ng-bind="v2.description"></p>
+				<p class="p2" ng-bind="v2.money"></p>
+			</li>
+		</ul>
+</div>

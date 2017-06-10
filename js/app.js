@@ -1,0 +1,40 @@
+var webApp=angular.module('webApp',['ui.router','validation','ngCookies']);
+webApp.config(function ($stateProvider, $urlRouterProvider) {
+$urlRouterProvider.otherwise('/home');
+$stateProvider.state('home',{
+    url:'/home',
+    templateUrl:'./tpls/home.html',
+    controller:'homeCtrl'
+}).state('classification',{
+	url:'/classification',
+	templateUrl:'./tpls/classification.html',
+	controller:'classificationCtrl'
+}).state('search',{
+    url:'/search',
+    templateUrl:'./tpls/search.html',
+    controller:'searchCtrl'
+}).state('user',{
+    url:'/user',
+    templateUrl:'./tpls/user.html',
+    controller:'userCtrl'
+}).state('courseDetial',{
+	url:'/courseDetial/:id',
+	templateUrl:'./tpls/courseDetial.html',
+    controller:'courseDetialCtrl'
+}).state('courseDetial.courseDetialDetial',{
+	url:'/courseDetialDetial',
+	templateUrl:'./tpls/courseDetialDetial.html'
+}).state('courseDetial.courseDetialCatalog',{
+	url:'/courseDetialCatalog',
+	templateUrl:'./tpls/courseDetialCatalog.html'
+}).state('login',{
+	url:'/login',
+	templateUrl:'./tpls/login.html',
+	controller:'loginCtrl'
+}).state('register',{
+	url:'/register',
+	templateUrl:'./tpls/register.html',
+	controller:'registerCtrl'
+})
+});
+

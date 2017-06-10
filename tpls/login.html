@@ -1,0 +1,14 @@
+<div class="login-wrapper">
+	<form name="form">
+		<div class="text-wrapper">
+			<span class="glyphicon glyphicon-user phone"></span>
+			<input ng-model="user.phone" validator="phone" type="text" placeholder="请输入账号" />
+		</div>
+		<div class="passward-wrapper">
+			<span class="glyphicon glyphicon-lock password"></span>
+			<input validator="password" ng-model="user.password" type="password" placeholder="请输入密码" />
+		</div>
+		<button class="login" validation-submit="form" ng-click="submit()">登陆</button>
+		<button class="register" ui-sref="register">注册</button>
+	</form>
+</div>

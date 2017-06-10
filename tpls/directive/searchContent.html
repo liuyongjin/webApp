@@ -1,0 +1,12 @@
+<div class="search-content-wrapper">
+	<div class="search-top-wrapper">
+		<span  class="cancel" ng-click="cancel()">取消</span>
+		<input type="text" ng-model="name" placeholder="搜索课程/老师/机构" />
+		<span  ng-click="search()" class="search">搜索</span>
+	</div>
+	<ul>
+		<h3><i class="glyphicon glyphicon-fire"></i>&nbsp;&nbsp;热门搜索</h3>
+		<li ng-repeat="v in data" ng-bind="v.name" class="animated lightSpeedIn" ng-click="add($index)"></li>
+	</ul>
+
+</div>
